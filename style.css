@@ -5,7 +5,7 @@
 }
 
 @font-face {
-  font-family: "Vice City Sans Bold";
+  font-family: "Vice City Sans";
   src: url(./font/vice_city_sans.zip);
 }
 
@@ -18,13 +18,17 @@
   --contato: #E5E5E5;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .container-grid {
   width: 80vw;
   max-width: 1400px;
   margin: 0 auto;
 }
 
-header.container-grid{
+header.container-grid {
   display: flex;
   align-items: center;
   gap: 400px;
@@ -38,7 +42,7 @@ header img {
   width: 200px;
 }
 
-.pesquisa{
+.pesquisa {
   width: 100%;
 }
 
@@ -52,7 +56,7 @@ header img {
 .menu a {
   font-size: 25px;
   color: #000000;
-  font-family: "Vice City Sans Bold";
+  font-family: "Vice City Sans";
   text-decoration: underline transparent;
   text-decoration-thickness: 2px;
   transition: text-decoration 300ms ease;
@@ -98,6 +102,8 @@ button:hover {
   background-color: #0056b3;
 }
 
+/* ---------sobre----- */
+
 #sobre {
   display: flex;
   align-items: center;
@@ -106,8 +112,8 @@ button:hover {
   margin-bottom: 200px;
 
   background-image: url(./img/Rectangle\ 69.png);
-  margin-right: 50px;
-  margin-left: 100px
+  height: 500px;
+
 }
 
 #sobre img {
@@ -118,12 +124,12 @@ button:hover {
 }
 
 #sobre h2 {
-  margin-right: 5px;
+  margin-right: 10px;
   color: #F3F2F2;
 }
 
 #sobre p {
-  font-family: "Vice City Sans Bold" , Bold;
+  font-family: "Vice City Sans";
   font-size: 28px;
   text-align: justify;
   margin-top: 20px;
@@ -131,10 +137,246 @@ button:hover {
   color: #F3F2F2;
 }
 
-#icones{
-   height: 80vh;
+/* ---------icones------- */
+
+#icones {
+  height: 80vh;
   background-image: url(./img/Group\ 29.svg);
-   background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: 0 -20px;
   background-size: 100%;
+}
+
+.menu-colorido {
+  max-width: 700px;
+  width: 70%;
+  gap: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  bottom: 270px;
+  left: 270px;
+}
+
+
+
+/* -------- cards------ */
+
+#icone-card {
+  margin-bottom: 100px;
+}
+
+#icone-card {
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.card h3 {
+  margin-left: 10px;
+  font-family: "Vice City Sans";
+}
+
+.container-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+#icone-cards .card {
+  width: 300px;
+  margin: 80px;
+  padding: 80px 40px;
+  border-radius: 40px;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#icone-cards .card svg {
+  color: #F7931E;
+  height: 90px;
+}
+
+#icone-cards .card:hover {
+  border: solid 3px #F7931E;
+}
+
+#servicos .card:hover svg {
+  fill: #F7931E;
+}
+
+/* ---------------Footer------------- */
+footer {
+    height: 250px;
+    background-image: url(./img/Rectangle\ 69.png);
+}
+
+footer img {
+    height: 90px;
+}
+
+footer .container-grid {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.redes-sociais {
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.redes-sociais p {
+    color: var(--branco);
+
+    font-family: "Vice City San";
+    font-size: 24px;
+}
+
+.icones-redes {
+    width: 240px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.icones-redes a {
+    color: var(--branco);
+}
+
+.icones-redes a:hover {
+    color: var(--verde-pixelV);
+}
+
+
+/* -------contato---- */
+
+#contato form {
+  max-width: 980px;
+  width: 90%;
+
+  margin: 0 auto;
+  padding: 60px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: solid 3px #A05212;
+  border-radius: 40px;
+  background-color: #A05212;
+
+  color: #FFFFFF;
+  font-family: "Vice City Sans";
+  font-size: 17px;
+}
+
+.campo {
+  width: 60%;
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-bottom: 50px;
+
+}
+
+.campo-descricao {
+  width: 60%;
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-bottom: 30px;
+}
+
+.campo input {
+  height: 40px;
+
+  color: #FFFFFF;
+  background-color: var(--branco);
+
+  border: none;
+  border-radius: 4px;
+
+  text-indent: 10px;
+  outline: none;
+}
+
+.campo-descricao textarea {
+  color: #FFFFFF;
+  background-color: var(--branco);
+
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  padding: 10px;
+
+  resize: none;
+}
+
+.campo input,
+.campo-descricao label {
+  margin-bottom: 15px;
+}
+
+.campo input,
+.campo-descricao {
+  font-family: "Vice City Sans";
+  font-size: 17px;
+}
+
+.campo input::placeholder,
+.campo-descricao textarea::placeholder {
+  color: #a0a0a0;
+}
+
+.campo input:focus,
+.campo-descricao textarea:focus {
+  outline: 2px solid #A05212;
+}
+
+#contato form button {
+  height: 40px;
+  width: 60%;
+
+  background-color: #F7931E;
+  color: var(--branco);
+
+  border: none;
+  border-radius: 4px;
+
+  font-size: 17px;
+  font-family: "Vice City Sans";
+  font-weight: 700;
+
+  text-transform: uppercase;
+  cursor: pointer;
+
+  transition: background-color 500ms;
+}
+
+#contato form button:hover {
+  background-color: #A05212;
 }
