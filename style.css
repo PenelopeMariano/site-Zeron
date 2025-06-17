@@ -231,7 +231,7 @@ button:hover {
 }
 
 #meuCarrossel {
-    max-width: 1040px;
+    max-width: 1050px;
     width: 90%;
     left: 250px;
 }
@@ -369,7 +369,7 @@ button:hover {
 /* ---------------Footer------------- */
 footer {
   height: 250px;
-  background-image: url(./img/Rectangle\ 69.png);
+  background-image: url(./img/Rectangle\ 57.png);
 }
 
 footer img {
